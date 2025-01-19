@@ -59,8 +59,19 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    animation: anima 0.8s linear;
 }
-
+@keyframes anima {
+    0%{transform: translateX(-10px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+.header-banner img{
+    animation: anima2 0.8s linear;
+}
+@keyframes anima2 {
+    0%{transform: translateX(10px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
 .section-title {
     font-family: "Inter", serif;
     font-size: 36px;

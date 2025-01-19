@@ -16,3 +16,7 @@ function adicionarAmigo(){
 
     document.querySelector(".input-name").value = "";
 }
+
+function sortearAmigo(){
+    
+}
