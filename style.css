@@ -171,3 +171,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* Responsividade */
+
+@media (max-width: 860px) {
+    .header-banner{
+        flex-direction: column;
+    }
+}
