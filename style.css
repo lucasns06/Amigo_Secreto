@@ -4,6 +4,8 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
+    --color-button2: #2b44fe;
+    --color-button2-hover: #202ae5;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -101,6 +103,9 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 /* Estilos de entrada de texto */
@@ -163,13 +168,17 @@ ul {
     background-color: var(--color-button);
     font-size: 16px;
 }
-
+.button-draw-create{
+    background-color: var(--color-button2);
+}
 .button-draw img {
     margin-right: 40px;
 }
-
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+.button-draw-create:hover{
+    background-color: var(--color-button2-hover);
 }
 
 /* Responsividade */

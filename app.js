@@ -4,6 +4,24 @@ let amigos = [];
 function limparCampo(){
     document.querySelector(".input-name").value = "";
 }
+//Para testar
+function gerarAmigos(){
+    for(let i = 1; i < 5; i++){
+        amigos.push("Amigo " + i); 
+    }
+    atualizarLista(); 
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = "";
+}
+function limparAmigos(){
+    if(amigos.length === 0){
+        alert("Sem amigos para limpar");
+        return
+    }
+    
+    document.getElementById('listaAmigos').innerHTML = "";
+    amigos = [];
+}
 function adicionarAmigo(){
     let nomeAmigo = document.querySelector(".input-name").value;
     
@@ -13,7 +31,7 @@ function adicionarAmigo(){
     }
 
     amigos.push(nomeAmigo); 
-    
+
     atualizarLista(); 
     limparCampo();
 }
@@ -44,6 +62,4 @@ function sortearAmigo(){
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`
     
-    document.getElementById('listaAmigos').innerHTML = "";
-    amigos = [];
 }
