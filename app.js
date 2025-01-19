@@ -9,7 +9,7 @@ function adicionarAmigo(){
     let nomeAmigo = document.querySelector(".input-name").value;
     
     if (nomeAmigo.trim() === "") {
-        alert("Por favor, insira um nome válido!");
+        alert("Por favor, insira um nome válido.");
         return;
     }
 
@@ -32,5 +32,10 @@ function atualizarLista() {
 
 function sortearAmigo(){
     limparCampo();
-
+    if(amigos.length === 0){
+        alert("Sem amigos para sortear");
+        return
+    }
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`
 }
