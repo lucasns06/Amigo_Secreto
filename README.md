@@ -27,4 +27,12 @@ O objetivo é criar uma aplicação que permita adicionar nomes de amigos para r
 
 ## 💻 Como Executar o Projeto
 
-Entre no link da pagina do projeto, hospedada com github pages.
+Entre no link da pagina do projeto, hospedada com github pages. [Aqui](https://lucasns06.github.io/Amigo_Secreto/)
+
+ou
+
+clone o projeto
+```bash
+git clone https://github.com/lucasns06/Amigo_Secreto.git
+```
+e abra o index.html
