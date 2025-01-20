@@ -6,9 +6,13 @@ function limparCampo(){
 }
 //Para testar
 function gerarAmigos(){
-    for(let i = 1; i < 5; i++){
-        amigos.push("Amigo " + i); 
-    }
+    // for(let i = 1; i < 5; i++){
+    //     amigos.push("Amigo " + i); 
+    // }
+    amigos.push("Carlos")
+    amigos.push("Lucas")
+    amigos.push("Bruno")
+    amigos.push("Alex")
     atualizarLista(); 
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = "";
@@ -58,7 +62,7 @@ function sortearAmigo(){
 
     let indiceSorteado = Math.floor(Math.random() * amigos.length);
     let amigoSorteado = amigos[indiceSorteado];
-    amigos.pop(indiceSorteado)
+    amigos.splice(indiceSorteado, 1);
 
     let lista = document.getElementById("listaAmigos");
     let itens = lista.getElementsByTagName("li");
